@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Soma Divisores</title>
+    <script>
+        function somaDivisores(num) {
+            let soma = 0;
+            for (let i = 1; i < num; i++) {
+                if (i % 3 === 0 || i % 5 === 0) {
+                    soma += i;
+                }
+            }
+            return soma;
+        }
+
+        function calcular() {
+            const num = parseInt(document.getElementById('numero').value);
+            const resultado = somaDivisores(num);
+            document.getElementById('resultado').textContent = 'Resultado: ' + resultado;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="tools">
+            <div class="circle">
+                <span class="red box"></span>
+            </div>
+            <div class="circle">
+                <span class="yellow box"></span>
+            </div>
+            <div class="circle">
+                <span class="green box"></span>
+            </div>
+        </div>
+        <div class="card__content">
+            <p class="title">Soma Divisores</p>
+            <hr>
+            <p class="content">Digite um número inteiro positivo:
+            </p>
+            <div class="form">
+                <input class="input" type="text" id="numero" placeholder="Digite o número">
+                <span class="input-border"></span>
+            </div>
+            <br>
+            <button onclick="calcular()">Calcular</button>
+            <!-- <button onclick="calcular()">Calcular</button> -->
+            <p id="resultado"></p>
+        </div>
+        </div>
+</body>
+
+</html>
