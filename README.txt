@@ -7,7 +7,7 @@ Baixe os arquivos necessários. Certifique-se de que todos os arquivos estejam n
 
 Abra o arquivo index.html usando um navegador web.
 
-Aguarde o carregamento completo da página HTML. Ao carregar, o script JS será executado automaticamente, e você verá a saída no console do navegador.
+Aguarde o carregamento completo da página HTML. Ao carregar, o script JS será executado automaticamente na página, e você poderá colocar os valores desejados na página.
 
 Após concluir esses passos, você pode se certificar de que tudo funcionou conforme o esperado. Caso tenha encontrado algum problema, entre em contato e ficarei feliz em ajudar.
 
